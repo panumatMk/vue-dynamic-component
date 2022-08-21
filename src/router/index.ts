@@ -20,6 +20,16 @@ const router = createRouter({
             path: '/json',
             name: 'jsonShow',
             component: () => import('../views/JsonView.vue')
+        },
+        {
+            path: '/content',
+            name: 'contentChild',
+            component: () => import('../views/ContentChildView.vue')
+        },
+        {
+            path: '/accessChild',
+            name: 'accessChild',
+            component: () => import('../views/AccessChild.vue')
         }
     ]
 })
