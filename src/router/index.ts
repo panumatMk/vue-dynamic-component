@@ -30,6 +30,11 @@ const router = createRouter({
             path: '/accessChild',
             name: 'accessChild',
             component: () => import('../views/AccessChildView.vue')
+        },
+        {
+            path: '/dc',
+            name: 'dc',
+            component: () => import('../views/DynamicComponent.vue')
         }
     ]
 })

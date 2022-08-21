@@ -13,7 +13,7 @@ export interface Questions {
 export interface Answer {
     answerType?: string;
     placeholder?: string;
-    value?: string;
+    value?: string | string[];
     choices?: string[];
 }
 
@@ -39,7 +39,8 @@ export const rawData: Page = {
                     "item1",
                     "item2",
                     "item3"
-                ]
+                ],
+                value: []
             }
         }
     ]
