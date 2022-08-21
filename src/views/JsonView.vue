@@ -14,6 +14,7 @@
   </div>
   <hr>
   <button @click="submit">submit</button>
+  <button @click="clear">clear</button>
   <div>
     {{ result }}
   </div>
@@ -40,7 +41,7 @@ const rawJson = [
   {
     label: 'input 3',
     answerType: 'input',
-    type: 'password',
+    type: 'email',
     placeholder: 'input 3',
     value: null
   },
@@ -64,6 +65,10 @@ const result = ref();
 
 function submit() {
   result.value = JSON.stringify(data);
+}
+
+function clear() {
+  result.value = '';
 }
 
 </script>
