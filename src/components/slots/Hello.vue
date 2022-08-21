@@ -7,6 +7,14 @@
 </template>
 
 <script setup>
+
+function sayHi() {
+  console.log('Hi all.');
+}
+
+defineExpose({
+  sayHi,
+});
 </script>
 
 <style scoped>

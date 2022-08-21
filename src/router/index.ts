@@ -29,7 +29,7 @@ const router = createRouter({
         {
             path: '/accessChild',
             name: 'accessChild',
-            component: () => import('../views/AccessChild.vue')
+            component: () => import('../views/AccessChildView.vue')
         }
     ]
 })
